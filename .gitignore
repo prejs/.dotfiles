@@ -1,0 +1,4 @@
+gitconfig_*
+!gitconfig_local
+ssh/
+gnupg/

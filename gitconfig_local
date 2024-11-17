@@ -1,0 +1,8 @@
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.gitconfig_allowedsigners
+[user]
+	signingkey = ~/.ssh/prejs_users_noreply_github_com.pub

@@ -1,3 +1,24 @@
-- clean: []
-- link: {}
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.gnupg', '~/.ssh']
+
+- link:
+    ~/:
+      glob: true
+      path: git*
+      prefix: '.'
+    ~/:
+      glob: true
+      path: z*
+      prefix: '.'
+
+- create:
+    ~/.ssh:
+      mode: 0700
+    ~/.gnupg:
+      mode: 0700
+
 - shell: []
